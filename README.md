@@ -18,7 +18,7 @@ posthog.init('phc_ItMFP3E7rtBapLnS9FPapVjUpgJBYtHi76dULIIx7EX',
 ```
 https://posthog.com/docs/advanced/proxy/netlify
 
-#### Pirsch
+### Pirsch
 ```html
 <script defer src="https://usage.example.com/static/files/pa.js"
     id="pianjs"

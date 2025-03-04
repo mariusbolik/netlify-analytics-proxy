@@ -1,0 +1,30 @@
+# Netlify proxy configuration for Pirsch analytics
+proxies:
+  # Proxy for the Pirsch analytics script
+  /static/files/pa.js:
+    target: https://api.pirsch.io/pa.js
+    path: pa.js
+  
+  # Proxy for page views
+  /p/pv:
+    target: https://api.pirsch.io/api/v1/hit
+    path: hit
+  
+  # Proxy for events
+  /p/e:
+    target: https://api.pirsch.io/api/v1/event
+    path: event
+  
+  # Proxy for sessions
+  /p/s:
+    target: https://api.pirsch.io/api/v1/session
+    path: session
+
+headers:
+  - for: /*
+    values:
+      Access-Control-Allow-Origin: '*'
+      Access-Control-Allow-Methods: 'GET, POST, OPTIONS'
+      Access-Control-Allow-Headers: 'Content-Type, Authorization'
+      Accept-CH: 'Sec-CH-UA, Sec-CH-UA-Mobile, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-Width, Sec-CH-Viewport-Width'
+      

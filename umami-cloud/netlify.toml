@@ -1,0 +1,13 @@
+[[redirects]]
+  from = "/script.js"
+  to = "https://cloud.umami.is/script.js"
+  status = 200
+  force = true
+  headers = {Host = "cloud.umami.is"}
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://api-gateway.umami.dev/api/:splat"
+  status = 200
+  force = true
+  headers = {Host = "api-gateway.umami.dev"}

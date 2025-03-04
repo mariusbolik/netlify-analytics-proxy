@@ -2,6 +2,9 @@
 
 Netlify supports redirects and rewrites which we can use as a reverse proxy. Simply grab the matching folder for your favorite analytics service and upload it in a new Netlify project. Than start adding the domains for every project where you want to bypass adblockers.
 
+Why Netlify? Because it's free and there is no limit on requests like on Cloudflare Pages, where you have to pay after 100K requests.
+
+<img width="1105" alt="Screenshot 2025-03-04 at 12 05 43" src="https://github.com/user-attachments/assets/2c162571-6d0d-4284-86c5-9380fdaa4c58" />
 
 
 ### Posthog
